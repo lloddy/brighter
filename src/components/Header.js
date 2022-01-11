@@ -1,11 +1,17 @@
+import { Link } from 'react-router-dom'
+
+
 const Header = (props) => {
 
     return (
         <div className="navBar">
-            <h1>Brighter</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/create">New Entry</a>
+                <Link to="/">
+                   <h1>Brighter</h1> 
+                </Link>
+                <Link to="/create">
+                    <h2>Post</h2>
+                </Link>
             </div>
         </div>
     );
