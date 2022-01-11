@@ -2,9 +2,11 @@ const Header = (props) => {
 
     return (
         <div className="navBar">
-            <nav className="nav">
-                <h1>Nav</h1>
-            </nav>
+            <h1>Brighter</h1>
+            <div className="links">
+                <a href="/">Home</a>
+                <a href="/create">New Entry</a>
+            </div>
         </div>
     );
 };
