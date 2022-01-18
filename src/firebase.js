@@ -1,18 +1,16 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import "firebase/firestore"
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBWqpfOpd_B-K-3DKz5pzUckWrEDrUfzh4",
-    authDomain: "brighter-2aeef.firebaseapp.com",
-    projectId: "brighter-2aeef",
-    storageBucket: "brighter-2aeef.appspot.com",
-    messagingSenderId: "495683278290",
-    appId: "1:495683278290:web:000faaf0c4d0b1b089240b",
-    measurementId: "G-F86TYK61TD"
+    apiKey: process.env.React_APP_FIREBASE_API_KEY,
+    authDomain: process.env.React_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.React_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.React_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.React_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.React_APP_FIREBASE_APP_ID,
+    measurementId: process.env.React_APP_FIREBASE_MEASUREMENT_ID
 };
 
-const firebase = initializeApp(firebaseConfig);
-const analytics = getAnalytics(firebase);
+const app = initializeApp(firebaseConfig);
 
-export default firebase;
+export const db = getFirestore(app);
