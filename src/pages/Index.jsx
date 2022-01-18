@@ -1,6 +1,13 @@
 const Index = (props) => {
     return (
-        <h1>The Index</h1>
+        props.blogs.map((blog) => (
+            <div key={blog._id}>
+                <h1 className="blogTitle">
+                    {blog.title}
+                </h1>
+
+            </div>
+        ))
     )
 }
 
