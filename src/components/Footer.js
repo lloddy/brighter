@@ -1,7 +1,10 @@
 const Footer = (props) => {
+    
+    
+
     return (
         <footer className="footer">
-            <p>Copyright &copy; All Rights Reserved Brighter 2022</p>
+            <p>Copyright &copy; All Rights Reserved Brighter {(new Date().getFullYear())}</p>
         </footer>
     );
 };

@@ -20,7 +20,8 @@ const Index = (props) => {
                 return (
                     <div>
                         {""}
-                        <h1>Title: {blog.title}</h1>
+                        <h2>Title: {blog.title}</h2>
+                        <p>{blog.desc}</p>
                     </div>
                 )
             })}

@@ -7,7 +7,7 @@ const Header = (props) => {
         <div className="navBar">
             <div className="links">
                 <Link to="/">
-                   <h1>Brighter</h1> 
+                   <h1>BRIGHTER</h1> 
                 </Link>
                 <Link to="/create">
                     <h2>Post</h2>
@@ -16,5 +16,6 @@ const Header = (props) => {
         </div>
     );
 };
+
 
 export default Header;
